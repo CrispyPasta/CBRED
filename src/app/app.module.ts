@@ -10,6 +10,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { SkilltableComponent } from './components/skilltable/skilltable.component';
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SkilltableComponent } from './components/skilltable/skilltable.componen
     MatSliderModule,
     MatTabsModule,
     MatExpansionModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
