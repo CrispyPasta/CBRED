@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface skill {
-  name: string;
-  base: number;
-  stat: number;
-  lvl: number;
-}
+import { skill } from "../skill";
 
 export interface socialSkills {
   bribery: skill;
