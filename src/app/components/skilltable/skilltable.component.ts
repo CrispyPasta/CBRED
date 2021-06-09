@@ -1,29 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { skill } from "../skill";
-
-export interface socialSkills {
-  bribery: skill;
-  conversation: skill;
-  humanPerception: skill;
-  interrogation: skill;
-  persuasion: skill;
-  personalGrooming: skill;
-  streetwise: skill;
-  trading: skill;
-  wardrobe: skill;
-}
-
-const SKILL_TABLE: skill[] = [
-  {name: 'Bribery', base: 0, stat: 0, lvl: 0},
-  {name: 'Conversation', base: 0, stat: 0, lvl: 0},
-  {name: 'Human Perception', base: 0, stat: 0, lvl: 0},
-  {name: 'Interrogation', base: 0, stat: 0, lvl: 0},
-  {name: 'Persuasion', base: 0, stat: 0, lvl: 0},
-  {name: 'Personal Grooming', base: 0, stat: 0, lvl: 0},
-  {name: 'Streetwise', base: 0, stat: 0, lvl: 0},
-  {name: 'Trading', base: 0, stat: 0, lvl: 0},
-  {name: 'Wardrobe & Style', base: 0, stat: 0, lvl: 0}
-];
+import { AWARENESS_SKILL_TABLE } from "../skillTables";
+import { BODY_SKILL_TABLE } from "../skillTables";
+import { CONTROL_SKILL_TABLE } from "../skillTables";
+import { EDUCATION_SKILL_TABLE } from "../skillTables";
+import { FIGHTING_SKILL_TABLE } from "../skillTables";
+import { PERFORMANCE_SKILL_TABLE } from "../skillTables";
+import { RANGED_SKILL_TABLE } from "../skillTables";
+import { SOCIAL_SKILL_TABLE } from "../skillTables";
+import { TECHNIQUE_SKILL_TABLE } from "../skillTables";
 
 @Component({
   selector: 'app-skilltable',
@@ -31,12 +16,15 @@ const SKILL_TABLE: skill[] = [
   styleUrls: ['./skilltable.component.css']
 })
 
+
 export class SkilltableComponent implements OnInit{
+  
   displayedColumns: string[] = ['Skill', 'LVL', 'STAT', 'BASE'];
-  dataSource = SKILL_TABLE;
-
+  dataSource = SOCIAL_SKILL_TABLE;
+  awarenessDataSource = AWARENESS_SKILL_TABLE;
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 }
