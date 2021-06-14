@@ -50,17 +50,17 @@ export const FIGHTING_SKILL_TABLE: skill[] = [
     { name: 'Melee Weapon', lvl: 0, stat: 0, base: 0 }
 ];
 
-export const PERFORMANCE_SKILL_TABLE: skill[] = [
-    { name: 'Acting', lvl: 0, stat: 0, base: 0 },
-    { name: 'Play Instrument', lvl: 0, stat: 0, base: 0 }       //this has two sub-skills
-];
-
 export const RANGED_SKILL_TABLE: skill[] = [
     { name: 'Archery', lvl: 0, stat: 0, base: 0 },
     { name: 'Autofire(x2)', lvl: 0, stat: 0, base: 0 },
     { name: 'Handgun', lvl: 0, stat: 0, base: 0 },
     { name: 'Heavy Weapons(x2)', lvl: 0, stat: 0, base: 0 },
     { name: 'Shoulder Arms', lvl: 0, stat: 0, base: 0 }
+];
+
+export const PERFORMANCE_SKILL_TABLE: skill[] = [
+    { name: 'Acting', lvl: 0, stat: 0, base: 0 },
+    { name: 'Play Instrument', lvl: 0, stat: 0, base: 0 }       //this has two sub-skills
 ];
 
 export const SOCIAL_SKILL_TABLE: skill[] = [

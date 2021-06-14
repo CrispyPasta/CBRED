@@ -5,89 +5,104 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
+                            Awareness skills
+                        </mat-panel-title>
+
+                        <mat-panel-description>
+                            Skills that depend on how percerptive you are.
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <app-skilltable [groupNumber] = "0"></app-skilltable>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
                             Body skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
                             Skills that depend on your physical fitness.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "1"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
-    
+
             <mat-accordion class="example-headers-align" multi>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             Control skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
                             Your ability to drive vehicles.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "2"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
-    
+
             <mat-accordion class="example-headers-align" multi>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             Education skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
                             Your knowledge of the world, including languages.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "3"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
-    
+
             <mat-accordion class="example-headers-align" multi>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             Fighting skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
                             Your unarmed and melee skills.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "4"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
-    
+
             <mat-accordion class="example-headers-align" multi>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
-                            Combat skills
+                            Ranged skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
-                            Your fighting skills including melee and ranged weapons.
+                            Your fighting skills with ranged weapons.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "5"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
-    
+
             <mat-accordion class="example-headers-align" multi>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             Performance skills
                         </mat-panel-title>
-    
+
                         <mat-panel-description>
                             For when you need to entertain or distract.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "6"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
 
@@ -97,12 +112,12 @@
                         <mat-panel-title>
                             Social skills
                         </mat-panel-title>
-            
+
                         <mat-panel-description>
                             Skills that depend on your empathy and humanity.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "7"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
 
@@ -112,12 +127,12 @@
                         <mat-panel-title>
                             Technical skills
                         </mat-panel-title>
-            
+
                         <mat-panel-description>
                             Your skills with technology.
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <app-skilltable></app-skilltable>
+                    <app-skilltable [groupNumber] = "8"></app-skilltable>
                 </mat-expansion-panel>
             </mat-accordion>
 

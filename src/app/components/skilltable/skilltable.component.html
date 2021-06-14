@@ -1,26 +1,26 @@
-<table mat-table [dataSource] = "dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="tableList[this.groupNumber]" class="mat-elevation-z8">
 
     <!-- Skill column -->
     <ng-container matColumnDef="Skill">
-        <th mat-header-cell *matHeaderCellDef> <b>Skill</b> </th>
+        <th mat-header-cell *matHeaderCellDef> <p  style="font-size: 20px;">Skill</p> </th>
         <td mat-cell *matCellDef="let skill"> {{skill.name}} </td>
     </ng-container>
-    
+
     <!-- LVL column -->
     <ng-container matColumnDef="LVL">
-        <th mat-header-cell *matHeaderCellDef> <b>LVL</b> </th>
+        <th mat-header-cell *matHeaderCellDef> <p style="font-size: 14px;">LVL</p> </th>
         <td mat-cell *matCellDef="let skill"> {{skill.lvl}} </td>
     </ng-container>
-    
+
     <!-- STAT column -->
     <ng-container matColumnDef="STAT">
-        <th mat-header-cell *matHeaderCellDef> <b>STAT</b> </th>
+        <th mat-header-cell *matHeaderCellDef> <p style="font-size: 14px;">STAT</p> </th>
         <td mat-cell *matCellDef="let skill"> {{skill.stat}} </td>
     </ng-container>
-    
+
     <!-- BASE column -->
     <ng-container matColumnDef="BASE">
-        <th mat-header-cell *matHeaderCellDef> <b>BASE</b> </th>
+        <th mat-header-cell *matHeaderCellDef> <p style="font-size: 14px;">BASE</p> </th>
         <td mat-cell *matCellDef="let skill"> {{skill.base}} </td>
     </ng-container>
 

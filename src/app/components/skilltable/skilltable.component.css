@@ -1,57 +1,17 @@
 table {
-  /* color: rgb(255, 255, 255); */
-  /* background-color: rgb(216, 216, 216); */
-  border-color: rgb(255, 0, 0);
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-radius: 8px;
-  border-collapse: separte;
-  border-spacing: 0;
-  display: table;
-  overflow: auto;
-  width: 100%;
+    /* width: 100%; */
 }
-table thead th {
-  color: white;
-  background-color: rgb(156, 26, 26);
-  font-weight: bold;
-  font-size: 0.8em;
-  padding: 5px 10px;
-  vertical-align: bottom;
+
+mat-header-cell, mat-cell{
+    justify-content: left;
 }
-table thead th:first-child {
-  border-top-left-radius: 8px;
+
+.mat-column-Skill {
+    width: 170px;
+    border-right: 2px solid rgb(255, 35, 35);
 }
-table thead th:last-child {
-  border-top-right-radius: 8px;
+
+.mat-column-LVL, .mat-column-STAT, .mat-column-BASE {
+    width: 60px;
+    text-align: center;
 }
-table tbody td {
-  border-top: 1px solid rgb(175, 62, 62);
-  padding: 5px 10px;
-  vertical-align: top;
-}
-table tbody tr:nth-child(2n) {
-  background-color: lightgray;
-}
-/* <table>
-  <thead>
-    <tr>
-      <th>Method</th>
-      <th>Runtime</th>
-      <th align="right">Mean</th>
-      <th align="right">Ratio</th>
-      <th align="right">Gen 0/1k Op</th>
-      <th align="right">Allocated Memory/Op</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Baseline</td>
-      <td>Clr</td>
-      <td align="right">1.833 us</td>
-      <td align="right">1.00</td>
-      <td align="right">2.0542</td>
-      <td align="right">6.31 KB</td>
-    </tr>
-  </tbody>
-</table> */
